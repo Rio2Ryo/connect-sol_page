@@ -147,20 +147,20 @@ export default function Home() {
             <table className="w-full">
               <tbody>
                 <tr>
+                  <th className="w-1/3 bg-orange-50 p-4 text-left">代表取締役</th>
+                  <td className="p-4">中野　淳</td>
+                </tr>
+                <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left border-b">住所</th>
-                  <td className="p-4 border-b">東京都千代田区神田錦町3</td>
+                  <td className="p-4 border-b">東京都千代田区内2-3-1 メインステージ大手町13階</td>
                 </tr>
                 <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left border-b">電話番号</th>
-                  <td className="p-4 border-b">03-1234-5678</td>
+                  <td className="p-4 border-b">03-4400-4451</td>
                 </tr>
                 <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left border-b">メール</th>
-                  <td className="p-4 border-b">info@connectsol.co.jp</td>
-                </tr>
-                <tr>
-                  <th className="w-1/3 bg-orange-50 p-4 text-left">営業時間</th>
-                  <td className="p-4">平日 9:00-18:00</td>
+                  <td className="p-4 border-b">info@connectsol-corp.com</td>
                 </tr>
               </tbody>
             </table>
