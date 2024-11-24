@@ -51,16 +51,22 @@ export default function Navbar() {
               to="/consulting"
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
-              営業コンサルティング
+               営業コンサルティング
             </Link>
             <Link
               to="/ma-support"
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
               M&A支援
-        
-            <a
-              href="/#contact"
+            </Link>
+            <Link
+              to="/recruitment"
+              className="text-black hover:text-gray-600 font-medium transition-colors"
+            >
+              採用情報
+            </Link>
+            <button
+              onClick={handleContactClick}
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
               お問い合わせ
