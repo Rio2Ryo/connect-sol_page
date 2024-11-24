@@ -147,7 +147,7 @@ export default function Home() {
             <table className="w-full">
               <tbody>
                 <tr>
-                  <th className="w-1/3 bg-orange-50 p-4 text-left">代表取締役</th>
+                  <th className="w-1/3 bg-orange-50 p-4 text-left border-b">代表取締役</th>
                   <td className="p-4">中野　淳</td>
                 </tr>
                 <tr>
@@ -159,7 +159,7 @@ export default function Home() {
                   <td className="p-4 border-b">03-4400-4451</td>
                 </tr>
                 <tr>
-                  <th className="w-1/3 bg-orange-50 p-4 text-left border-b">メール</th>
+                  <th className="w-1/3 bg-orange-50 p-4 text-left">メール</th>
                   <td className="p-4 border-b">info@connectsol-corp.com</td>
                 </tr>
               </tbody>
