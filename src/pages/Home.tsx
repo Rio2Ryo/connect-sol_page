@@ -148,11 +148,11 @@ export default function Home() {
               <tbody>
                 <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left border-b">代表取締役</th>
-                  <td className="p-4">中野　淳</td>
+                  <td className="p-4 border-b">中野　淳</td>
                 </tr>
                 <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left border-b">住所</th>
-                  <td className="p-4 border-b">東京都千代田区内2-3-1 メインステージ大手町13階</td>
+                  <td className="p-4 border-b">東京都千代田区内神田2-3-1 メインステージ大手町13階</td>
                 </tr>
                 <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left border-b">電話番号</th>
@@ -160,7 +160,7 @@ export default function Home() {
                 </tr>
                 <tr>
                   <th className="w-1/3 bg-orange-50 p-4 text-left">メール</th>
-                  <td className="p-4 border-b">info@connectsol-corp.com</td>
+                  <td className="p-4">info@connectsol-corp.com</td>
                 </tr>
               </tbody>
             </table>
