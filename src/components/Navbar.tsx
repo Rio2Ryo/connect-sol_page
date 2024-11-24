@@ -59,12 +59,12 @@ export default function Navbar() {
             >
               M&A支援
             </Link>
-            <Link
+            <!--<Link
               to="/recruitment"
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
               採用情報
-            </Link>
+            </Link>-->
             <a
               href="/#contact"
               className="text-black hover:text-gray-600 font-medium transition-colors"
