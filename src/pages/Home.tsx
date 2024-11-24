@@ -4,7 +4,7 @@ import ServiceCard from '../components/ServiceCard';
 import AchievementCard from '../components/AchievementCard';
 
 export default function Home() {
-  const achievements = [
+  const salesAchievements = [
     {
       title: 'ウェアラブルデバイス',
       image: 'https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&q=80'
@@ -18,24 +18,27 @@ export default function Home() {
       image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80'
     },
     {
-      title: 'YouTube',
+      title: 'タッチ名刺',
+      image: 'https://images.unsplash.com/photo-1616628188859-7a11abb6fcc9?auto=format&fit=crop&q=80'
+    }
+  ];
+
+  const maAchievements = [
+    {
+      title: 'YouTubeM&A',
       image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&q=80'
     },
     {
-      title: 'ブログ',
+      title: 'ブログM&A',
       image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80'
     },
     {
-      title: '店舗',
-      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80'
-    },
-    {
-      title: '会社',
+      title: '会社・事業 M&A',
       image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80'
     },
     {
-      title: 'タッチ名刺',
-      image: 'https://images.unsplash.com/photo-1616628188859-7a11abb6fcc9?auto=format&fit=crop&q=80'
+      title: '店舗M&A',
+      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80'
     }
   ];
 
@@ -114,12 +117,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Achievements Section */}
+      {/* Sales Agency Achievements Section */}
       <div className="bg-white py-24">
         <div className="max-w-[900px] w-[85%] mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">実績紹介</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            {achievements.slice(0, 4).map((achievement, index) => (
+          <h2 className="text-3xl font-bold text-center mb-4">営業代行事業</h2>
+          <p className="text-center text-gray-600 mb-12">実績紹介</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {salesAchievements.map((achievement, index) => (
               <AchievementCard
                 key={index}
                 title={achievement.title}
@@ -127,10 +131,18 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* M&A Achievements Section */}
+      <div className="bg-gray-50 py-24">
+        <div className="max-w-[900px] w-[85%] mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-4">M&A事業</h2>
+          <p className="text-center text-gray-600 mb-12">実績紹介</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {achievements.slice(4).map((achievement, index) => (
+            {maAchievements.map((achievement, index) => (
               <AchievementCard
-                key={index + 4}
+                key={index}
                 title={achievement.title}
                 image={achievement.image}
               />
