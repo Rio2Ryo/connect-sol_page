@@ -1,12 +1,20 @@
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useScrollTo } from '../hooks/useScrollTo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollTo = useScrollTo();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    scrollTo('contact');
+    setIsOpen(false);
   };
 
   return (
@@ -15,9 +23,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
             <img
-              src="/conect-sol_logo.png"
+              src="http://ymtestserver.wp.xdomain.jp/pic/logo.png"
               alt="コネクトソル"
-              className="h-44"
+              className="h-20"
             />
           </Link>
 
@@ -51,7 +59,7 @@ export default function Navbar() {
               to="/consulting"
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
-               営業コンサルティング
+              営業コンサルティング
             </Link>
             <Link
               to="/ma-support"
@@ -70,7 +78,7 @@ export default function Navbar() {
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
               お問い合わせ
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -113,13 +121,12 @@ export default function Navbar() {
           >
             採用情報
           </Link>
-          <a
-            href="/#contact"
-            className="block px-3 py-2 rounded-md text-base font-medium text-black hover:text-gray-600 hover:bg-gray-50"
-            onClick={() => setIsOpen(false)}
+          <button
+            onClick={handleContactClick}
+            className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-black hover:text-gray-600 hover:bg-gray-50"
           >
             お問い合わせ
-          </a>
+          </button>
         </div>
       </div>
     </nav>
