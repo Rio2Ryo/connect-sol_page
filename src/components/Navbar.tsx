@@ -67,12 +67,6 @@ export default function Navbar() {
             >
               M&A支援
             </Link>
-            <Link
-              to="/recruitment"
-              className="text-black hover:text-gray-600 font-medium transition-colors"
-            >
-              採用情報
-            </Link>
             <button
               onClick={handleContactClick}
               className="text-black hover:text-gray-600 font-medium transition-colors"
@@ -113,13 +107,6 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             M&A支援
-          </Link>
-          <Link
-            to="/recruitment"
-            className="block px-3 py-2 rounded-md text-base font-medium text-black hover:text-gray-600 hover:bg-gray-50"
-            onClick={() => setIsOpen(false)}
-          >
-            採用情報
           </Link>
           <button
             onClick={handleContactClick}
