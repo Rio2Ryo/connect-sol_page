@@ -58,13 +58,7 @@ export default function Navbar() {
               className="text-black hover:text-gray-600 font-medium transition-colors"
             >
               M&A支援
-            </Link>
-            <!--<Link
-              to="/recruitment"
-              className="text-black hover:text-gray-600 font-medium transition-colors"
-            >
-              採用情報
-            </Link>-->
+        
             <a
               href="/#contact"
               className="text-black hover:text-gray-600 font-medium transition-colors"
