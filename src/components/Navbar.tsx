@@ -17,7 +17,7 @@ export default function Navbar() {
             <img
               src="/conect-sol_logo.png"
               alt="コネクトソル"
-              className="h-32"
+              className="h-44"
             />
           </Link>
 
