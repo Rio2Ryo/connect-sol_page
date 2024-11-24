@@ -50,7 +50,8 @@ export default function Recruitment() {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="space-y-6"
-            netlify
+            netlify 
+            netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="recruitment" />
             <div className="hidden">
